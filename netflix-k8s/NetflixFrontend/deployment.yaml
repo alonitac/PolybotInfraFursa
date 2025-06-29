@@ -19,7 +19,7 @@ spec:
         image: majdabbas99/netflifrontend
         env:
           - name: MOVIE_CATALOG_SERVICE
-            value: http://service-netflix-movie-cat:8080
+            value: http://netflix-movie:8080
 ---
 apiVersion: v1
 kind: Service
