@@ -20,7 +20,10 @@ spec:
           name: polybot-container
           env:
           - name: TELEGRAM_BOT_TOKEN
-            value: token123
+            valueFrom:
+              secretKeyRef:
+                name: bot-token
+                key: token
           - name: S3_BUCKET_NAME
             value: alonit-bucket
           - name: QUEUE_URL
